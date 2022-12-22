@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class VerifyTokens extends Model
 {
     use HasFactory;
+    protected $table='verify_token';
     protected $fillable=[
         'token',
         'user_id'

@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Http\Requests\UploadRequest;
+use App\Models\Image;
+use App\Models\User;
+use App\Models\VerifyTokens;
 class ImageController extends Controller
 {
     public function uploadImage(Request $request){
@@ -97,7 +100,7 @@ class ImageController extends Controller
         return $image->orderBy('id')->get();
     }
 
-    
+
   
 
 }

@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ImageController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +34,4 @@ Route::post('upload_image',[ImageController::class,'uploadImage']);
 Route::post('list_image',[ImageController::class,'listImage']);
 Route::post('delete_image',[ImageController::class,'deleteImage']);
 Route::post('upload_image',[ImageController::class,'uploadImage']);
+Route::post('search',[ImageController::class,'searchImage']);
